@@ -1,0 +1,12 @@
+{
+  "name": "furniture",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "tailwindcss": "^3.4.0"
+  },
+  "scripts": {
+    "build-css": "tailwind build -i ./src/css/input.css -o ./dist/output.css --watch"
+  }
+}
