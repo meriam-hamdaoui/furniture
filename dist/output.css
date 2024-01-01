@@ -948,6 +948,14 @@ video {
   height: 400px;
 }
 
+.h-\[386px\] {
+  height: 386px;
+}
+
+.h-\[97px\] {
+  height: 97px;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -1104,6 +1112,10 @@ video {
   width: 175px;
 }
 
+.w-\[400px\] {
+  width: 400px;
+}
+
 .origin-top-left {
   transform-origin: top left;
 }
@@ -1210,6 +1222,24 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {
@@ -1364,6 +1394,11 @@ video {
 .bg-\[\#F2F5FF\] {
   --tw-bg-opacity: 1;
   background-color: rgb(242 245 255 / var(--tw-bg-opacity));
+}
+
+.bg-sky-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(8 47 73 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\.\/src\/assets\/img\/Mask_Group\.jpg\'\)\] {
@@ -1663,6 +1698,10 @@ video {
 
 .leading-7 {
   line-height: 1.75rem;
+}
+
+.leading-\[35px\] {
+  line-height: 35px;
 }
 
 .tracking-\[3px\] {
