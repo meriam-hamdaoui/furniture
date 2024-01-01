@@ -31,7 +31,7 @@
 
     <!-- banner -->
     <header
-      class="relative min-h-screen bg-[url('../src/assets/img/banner.jpg')] bg-cover bg-center flex justify-end z-10"
+      class="relative w-full min-h-screen bg-[url('../src/assets/img/banner.jpg')] bg-cover bg-center flex sm:justify-center md:justify-end z-10"
     >
       <!-- overlay -->
       <div
@@ -39,7 +39,7 @@
       ></div>
       <!-- discover div -->
       <div
-        class="w-[630px] h-[430px] bg-slate-200 rounded-lg shadow-md m-[5.5rem] p-8 space-y-5"
+        class="md:w-[630px] h-[430px] sm:w-[450px] bg-slate-200 rounded-lg shadow-md m-[5.5rem] sm:m-[2rem] p-8 space-y-5"
       >
         <p
           class="text-zinc-800 text-base font-semibold font-sans tracking-[3px]"
@@ -47,7 +47,7 @@
           New Arrival
         </p>
         <p
-          class="w-[559px] h-[127px] text-sky-900 text-[52px] font-bold font-sans leading-[65px]"
+          class="md:w-[559px] md:h-[127px] sm:w-[500px] sm:h-[100px] text-sky-900 md:text-[52px] sm:text-[40px] font-bold font-sans leading-[65px]"
         >
           Discover Our New Collection
         </p>
@@ -58,7 +58,7 @@
           tellus, luctus nec ullamcorper mattis.
         </p>
         <div
-          class="w-[229px] h-[70px] px-[72px] py-[25px] bg-sky-900 rounded-[50px] border-2 justify-start items-start gap-2.5 inline-flex"
+          class="md:w-[229px] md:h-[70px] sm:w-[200px] sm:h-[55px] px-[72px] py-[25px] bg-sky-900 rounded-[50px] border-2 justify-start items-start gap-2.5 inline-flex"
         >
           <button class="text-white text-base font-bold font-sans uppercase">
             BUY Now
@@ -68,10 +68,10 @@
     </header>
 
     <!-- page content -->
-    <main>
+    <main class="w-full">
       <!-- services -->
       <section class="h-[150px] bg-blue-50">
-        <div class="w-11/12 mx-auto py-10 flex justify-between items-center">
+        <div class="w-9/12 mx-auto py-10 flex justify-between items-center">
           <!-- svg 1 -->
           <div class="w-[338px] h-[55px] relative flex gap-6">
             <div>
@@ -280,7 +280,7 @@
 
       <!-- your space -->
       <section class="bg-[#F2F5FF] py-16 text-gray-600 h-[800px]">
-        <div class="w-9/12 mx-auto flex justify-between">
+        <div class="w-8/12 md:w-10/12 lg:w-8/12 mx-auto flex justify-between">
           <div class="w-[514px] h-[279.97px] relative my-auto">
             <div
               class="w-[514px] h-[122.56px] left-0 top-[59.27px] absolute text-stone-500 text-xl font-normal font-sans leading-[39px]"
@@ -303,7 +303,7 @@
           </div>
           <div class="flex relative z-10">
             <div
-              class="absolute h-[500px] w-[500px] -z-10 ml-36 mt-14 bg-[url('../src/assets/Ellipse-5.png')] bg-cover bg-center"
+              class="absolute h-[500px] w-[500px] md:w-[350px] md:h-[350px] -z-10 ml-36 mt-14 bg-[url('../src/assets/Ellipse-5.png')] bg-cover bg-center"
             ></div>
             <img
               src="../src/assets/img/beautify.png"
@@ -326,7 +326,7 @@
             </p>
           </div>
 
-          <div class="flex justify-around items-center p-2">
+          <div class="flex flex-wrap gap-10 items-center p-2">
             <div>
               <img
                 class="mb-10"
@@ -379,7 +379,7 @@
             </p>
           </div>
 
-          <div class="flex justify-around items-center p-2">
+          <div class="flex flex-wrap gap-10 items-center p-2">
             <div class="text-center">
               <img
                 src="../src/assets/Purchase Securely.png"
@@ -467,8 +467,10 @@
     </main>
 
     <!-- footer -->
-    <footer class="h-[386px] bg-sky-950 py-20">
-      <div class="w-9/12 mx-auto flex space-x-10">
+    <footer class="h-full w-full bg-sky-950 py-20">
+      <div
+        class="w-9/12 mx-auto flex sm:flex-col lg:flex-row sm:space-y-10 lg:space-x-10"
+      >
         <div class="space-y-4">
           <p class="text-white text-2xl font-bold font-['Montserrat']">
             Beauty Care
@@ -485,11 +487,11 @@
         </div>
         <div class="space-y-4">
           <div>
-            <p class="text-white text-2xl font-bold font-['Montserrat']">
+            <p class="text-white text-2xl font-bold font-sans">
               Instagram Shop
             </p>
           </div>
-          <div class="flex justify-between space-x-6">
+          <div class="flex flex-wrap gap-8">
             <img src="../src/assets/img/IG-1.jpg" alt="baby corner" />
             <img src="../src/assets/img/IG-2.jpg" alt="" />
             <img src="../src/assets/img/IG-3.jpg" alt="" />
@@ -498,5 +500,17 @@
         </div>
       </div>
     </footer>
+
+    <!-- break point helper -->
+    <div
+      class="fixed bottom-0 z-50 bg-green-500 bg-opacity-70 text-white text-xl shadow-md px-2"
+    >
+      <span class="sm:hidden">default</span>
+      <span class="hidden sm:inline md:hidden">sm</span>
+      <span class="hidden md:inline lg:hidden">md</span>
+      <span class="hidden lg:inline xl:hidden">lg</span>
+      <span class="hidden xl:inline 2xl:hidden">xl</span>
+      <span class="hidden 2xl:inline">2xl</span>
+    </div>
   </body>
 </html>
